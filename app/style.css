@@ -2,13 +2,65 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a { 
+    color: #39A96B;
+}
+
 .header{
-    margin: 15px;
+    margin: 20px;
     padding: 10px;
+    font-weight: 700;
 }
 
 .pages-header {
-    background-color: seagreen;
-    color: white;
+    background-color: #39A96B;
+    color: #FFF;
     border-bottom-right-radius: 100px 100px;
+    margin-bottom: 30px;
+    padding: 10px;
+    
+}
+
+/** LOGIN  */
+.btn-login {
+    background-color: #39A96B;
+    color: #FFF;
+}
+
+.form-control:focus {
+    border-color: #39A96B;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+} 
+
+.new-account {
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/** HOME */
+.cards { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.each-card {
+    margin-bottom: 30px;
+    border: 1px #D8D8E8 solid;
+    border-radius: 10px;
+}
+
+.a-card:focus {
+    color: #39A96B;
+}
+
+/** REMEDIOS */
+
+.back-icon {
+    color: #FFF;
+}
+.back-icon:focus {
+    color: #FFF;
 }
