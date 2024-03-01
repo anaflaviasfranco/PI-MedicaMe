@@ -6,3 +6,9 @@ body {
     margin: 15px;
     padding: 10px;
 }
+
+.pages-header {
+    background-color: seagreen;
+    color: white;
+    border-bottom-right-radius: 100px 100px;
+}
