@@ -19,14 +19,29 @@
 		</div>
 
 		<div class="container-fluid"> 
-			<h3 id="userName" name="userName"></h3><h3>, seus remédios!</h3>
-			<button type="submit" class="btn btn-lg btn-block btn-addRemedio">Adicionar remédio</button>
+			<h3 id="userName" name="userName" class="h3inline"></h3>
+			<h3 class="h3inline">, seus remédios!</h3>
+			<a href="addRemedios.html"><button type="submit" class="btn btn-lg btn-block btn-addRemedio">Adicionar remédio</button></a>
+			<div class="container">
+				<div class="horario">
+					<h3 id="horario">8:45</h3>
+					<h3 id="diaSemana">Dia semana</h3>
+				</div>
+				<div class="descRemedio">
+					<h3 id="nomeRemedio">Nome remédio</h3>
+					<h3 id="descricao">Descrição</h3>
+					<button type="submit" class="btn btn-lg btn-finalizar">Finalizar</button>
+				</div>
+			</div>
         </div>
 
 
 
-
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
-    </body>
+		<script>
+			$("#userName").text("João");
+		</script>
+	</body>
