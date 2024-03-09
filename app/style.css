@@ -12,7 +12,7 @@ a {
 }
 
 label {
-    color: #FFF;
+    color: #000000;
 }
 
 h1 {
@@ -20,6 +20,8 @@ h1 {
     margin-left: -60px;
     font-weight: bold;
 }
+
+
 .header{
     margin: 60px;
     padding: 10px;
@@ -31,7 +33,7 @@ h1 {
     color: #FFF;
     border-bottom-right-radius: 100px 100px;
     margin-bottom: 30px;
-    padding: 10px;
+    padding: 25px;
     
 }
 
@@ -55,11 +57,13 @@ h1 {
 
 .background {
     background-image: url(images/background.png);
-    background-color: white;
+    background-color: rgb(151, 150, 150);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+
 
 .singup {
     background-color: transparent;
@@ -78,20 +82,32 @@ h1 {
     text-align: center;
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
 }
+
+.colorWorld {
+    color: #FFF;
+}
 /** HOME */
 .cards { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .each-card {
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+        
     border: 1px #D8D8E8 solid;
     border-radius: 10px;
+
+    text-align: center;
+    padding-top: 20px;
 }
 
+p {
+    margin-top: 10px;
+}
 .a-card:focus {
     color: #39A96B;
 }
