@@ -1,13 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 a { 
-    color: #39A96B;
+    color: #39A96B; 
 }
 
+label {
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+    margin-left: -60px;
+    font-weight: bold;
+}
 .header{
-    margin: 20px;
+    margin: 60px;
     padding: 10px;
     font-weight: 700;
 }
@@ -33,12 +47,37 @@ a {
 } 
 
 .new-account {
-    padding: 10px;
+    padding: 40px;
     margin: 10px;
     font-size: 14px;
     text-align: center;
 }
 
+.background {
+    background-image: url(images/background.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.singup {
+    background-color: transparent;
+    border-color: #ffffff00;
+    border-radius: 6px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.conectAuto {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
 /** HOME */
 .cards { 
     display: flex;
@@ -47,6 +86,7 @@ a {
 }
 
 .each-card {
+    margin-top: 40px;
     margin-bottom: 30px;
     border: 1px #D8D8E8 solid;
     border-radius: 10px;
@@ -56,6 +96,11 @@ a {
     color: #39A96B;
 }
 
+.welcome {
+    color: #39A96B;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
 /** REMEDIOS */
 
 .back-icon {
