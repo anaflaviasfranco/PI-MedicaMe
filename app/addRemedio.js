@@ -1,3 +1,6 @@
+$(document).ready(function() {
+    $('#horarioRemedio').mask('00:00');
+});
 function addRemedio(){
     var nomeRemedio = $('#nomeRemedio').val();
     var descricao = $('#descricao').val();
@@ -6,8 +9,16 @@ function addRemedio(){
     var diasSelecionados = checkboxes.map(function() {
         return this.value;
     }).get().join(', ');
-
-    var otherDocUrl = 'remedios.html?nome=' + encodeURIComponent(nomeRemedio) + '&descricao=' + encodeURIComponent(descricao) + '&horario=' + encodeURIComponent(horario) + '&dias=' + encodeURIComponent(diasSelecionados);
-    window.location.href = otherDocUrl;
+    var primaryKey = Date.now();
+    $('#timeStamp').val(primaryKey);
+    var timeStamp = $('#timeStamp').val();
+    
+    if(nomeRemedio == "" || horario == "" || diasSelecionados == ""){
+        window.alert("Campos obrigatórios: \n- Nome do remédio\n- Horário do remédio\n- Dia da semana")
+    } else{
+        var otherDocUrl = 'remedios.html?nome=' + encodeURIComponent(nomeRemedio) + '&descricao=' + encodeURIComponent(descricao) + '&horario=' + encodeURIComponent(horario) + '&dias=' + encodeURIComponent(diasSelecionados) + '&timeStamp=' + encodeURIComponent(timeStamp);
+        window.location.href = otherDocUrl;
+    }
 }
+
 
