@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    if(localStorage.getItem('nome')) {
+        return;
+    } else {
+        window.location.href = 'index.html'
+    }
+    
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');

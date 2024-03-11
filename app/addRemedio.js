@@ -1,5 +1,10 @@
 $(document).ready(function() {
     $('#horarioRemedio').mask('00:00');
+    if(localStorage.getItem('nome')) {
+        return;
+    } else {
+        window.location.href = 'index.html'
+    }
 });
 function addRemedio(){
     var nomeRemedio = $('#nomeRemedio').val();
