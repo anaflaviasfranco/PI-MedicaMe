@@ -1,25 +1,27 @@
-function fazerLogin() {
+function fazerLogin(event) {
+    event.preventDefault()
 
     var email = $("#exampleInputEmail1").val();
     var senha = $("#exampleInputPassword1").val();
 
     var dados = {
         email: email,
-        senha: senha
+        password: senha
     };
 
-    var url = 'add url depois';
+    var url = 'http://127.0.0.1:8000/api/login';
 
     $.ajax({
         url: url,
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(dados),
-        success: function() {
+        success: function(data) {
+            localStorage.setItem('nome', data.nome);
             window.location.href = 'home.html';
         },
         error: function(xhr, status, error) {
-        window.alert('Usuário inexistente')
+            alert('Verifique e-mail e senha.')
         }
     });
 
