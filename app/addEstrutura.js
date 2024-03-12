@@ -5,7 +5,9 @@ $(document).ready(function(){
     } else {
         window.location.href = 'index.html'
     }
-    
+    var nome = localStorage.getItem('nome');
+    $("#userName").text(nome);
+
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');

@@ -15,11 +15,13 @@
 
         <script>
             $(document).ready(function() {
-                if(localStorage.getItem('nome')) {
-                    return;
-                } else {
-                    window.location.href = 'index.html'
-                }
+			if(localStorage.getItem('nome')) {
+				return;
+			} else {
+				window.location.href = 'index.html'
+			}
+			var nome = localStorage.getItem('nome');
+			$("#userName").text(nome);
             })
         </script>
 	</head>
@@ -31,7 +33,7 @@
 			<h2>Home</h2>
 		</div>
 
-		<label class="welcome">Bem-vindo, João!</label>
+		<label class="welcome">Bem-vindo, <p id="userName" name="userName" class="h3inline"></p>!</label>
 
 		<div class="container-fluid"> 
 
