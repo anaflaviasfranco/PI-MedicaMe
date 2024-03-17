@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    if(localStorage.getItem('nome')) {
+        return;
+    } else {
+        window.location.href = 'index.html'
+    }
+    var nome = localStorage.getItem('nome');
+    $("#userName").text(nome);
+
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
@@ -15,6 +23,7 @@ $(document).ready(function(){
     var descricao = getParameterByName('descricao');
     var horario = getParameterByName('horario');
     var diasSelecionados = getParameterByName('dias');
+    var timeStamp = getParameterByName('timeStamp');
 
     if(nomeRemedio != null){
         var newContent = $('<div>').addClass('container').append(
@@ -25,6 +34,7 @@ $(document).ready(function(){
             $('<div>').addClass('descRemedio').append(
                 $('<h3>').attr('id', 'nomeRemedio').text(nomeRemedio),
                 $('<h3>').attr('id', 'descricao').text(descricao),
+                $('<input>').attr('type', 'hidden').attr('id', 'timeStamp').val(timeStamp),
                 $('<button>').attr('type', 'submit').addClass('btn btn-lg btn-finalizar').text('Finalizar')
             )
         );
@@ -38,3 +48,4 @@ $(document).ready(function(){
         $(this).closest('.container').remove();
     });
 });
+

@@ -130,8 +130,9 @@ p {
 
 .welcome {
     color: #39A96B;
-    margin-left: 120px;
+    margin-left: 25%;
     margin-bottom: 30px;
+    font-size: x-large;
 }
 /** REMEDIOS */
 
