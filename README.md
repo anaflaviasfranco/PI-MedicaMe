@@ -1,6 +1,6 @@
 # PI-MedicaMe
 Segunda entrega de Projeto Integrador
 
-Vídeo de demonstração da aplicação:
+Vídeo de demonstração da aplicação (link para YouTube):
 
-![](https://github.com/anaflaviasfranco/PI-MedicaMe/blob/main/MedicaMe.mp4)
+![Vídeo demonstração](https://youtu.be/YaCnaORArUE)
