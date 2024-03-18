@@ -45,7 +45,22 @@ $(document).ready(function(){
 
 
     $(document).on('click', '.btn-finalizar', function() {
-        $(this).closest('.container').remove();
+         /*
+        var timeStamp = $('#timeStamp').val();
+        var url = 'http://127.0.0.1:8000/api/login';
+
+        $.ajax({
+            url: url,
+            type: 'DELETE',
+            contentType: 'application/json',
+            data: JSON.stringify(timeStamp),
+            success: function(data) {
+                $(this).closest('.container').remove();
+            },
+            error: function(xhr, status, error) {
+            }
+        });*/
+        
     });
 });
 
