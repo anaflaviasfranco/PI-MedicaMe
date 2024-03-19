@@ -14,14 +14,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
         <script>
-            $(document).ready(function() {
-			if(localStorage.getItem('nome')) {
-				return;
-			} else {
-				window.location.href = 'index.html'
+			function routeValidate () {
+				if(localStorage.getItem('nome')) {
+					return;
+				} else {
+					window.location.href = 'index.html'
+				}
 			}
-			var nome = localStorage.getItem('nome');
-			$("#userName").text(nome);
+
+			function welcome () {
+				var nome = localStorage.getItem('nome');
+				$("#userName").text(nome);
+			}
+
+            $(document).ready(function() {
+				routeValidate()
+				welcome()
             })
         </script>
 	</head>

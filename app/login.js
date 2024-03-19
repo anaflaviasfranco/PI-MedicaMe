@@ -17,6 +17,7 @@ function fazerLogin(event) {
         contentType: 'application/json',
         data: JSON.stringify(dados),
         success: function(data) {
+            console.log(data)
             localStorage.setItem('nome', data.nome);
             window.location.href = 'home.html';
         },
